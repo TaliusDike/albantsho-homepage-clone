@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background-image: url('./images/purple-bg-3.jpg');
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    height: 120px;
+}
+
+.header-texts h1 {
+    font-size: 60px;
+    font-family: "Space Grotesk";
+    margin: 0px 25px 16px;
+}
+
+.header-texts p{
+    font-family: Poppins;
+    font-size: 20px;
+    margin: 0 25px;
+}
+
+.waitlist-flex-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.waitlist-input {
+    padding: 18px 20px;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.waitlist-signup-button button {
+    padding: 18px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #573195;
+    font-size: 12px;
+    width: 20vw;
+}
+
+.h3-wrapper {
+    font-family: Poppins;
+    margin-top: 100px;
+    font-size: 32px;
+    opacity: 0.85;
+}
+
+.features-text {
+    opacity: 0.5;
+    padding: 5px 8px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 12px;
+    color: black;
+}
+.icons-wrapper h6 {
+    font-size: 24px;
+    margin: 28px 50px;
+    color: goldenrod;
+  
+}
+
+.icons-wrapper p {
+    font-size: 15px;
+}
+
+.icons-wrapper img {
+    height: 200px;
+    width: 200px;
+}
+
+.icon1-wrapper, .icon2-wrapper, .icon3-wrapper {
+    padding: 40px;
+    max-width: 320px;
+    min-height: 460px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
+  
+}
+
+.icons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.workshop-wrapper {
+    margin: 100px 80px 20px;
+    padding-top: 30px;
+    background-image: linear-gradient(139.68deg, rgb(255, 224, 138) 16.99%, rgb(255, 175, 25) 100.91%);
+    box-shadow: rgba(255,175, 25, 0.2) 0px 10px 400px 81px;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    /* width: 60vw; */
+}
+
+.workshop-wrapper span {
+    opacity: 0.5;
+    padding: 5px 8px;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.workshop-wrapper h2 {
+    font-family: 'Space Grotesk';
+    font-size: 60px;
+    font-weight: 900;
+    padding: 20px 10px;
+}
+
+.workshop-wrapper p {
+    font-size: 15px;
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px;
+    gap: 20px;
+}
+
+.links-wrapper a {
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    width: 200px;
+    font: 900;
+    font-size: 20px;
+}
+
+.links-wrapper > .link-1 {
+    background: transparent;
+    border: 2px black solid;
+    color: black;
+}
+
+.links-wrapper > .link-2 {
+    background: #573195;
+    border: 1px black solid;
+    color: white;
+}
+
+.closing-waitlist-form{
+    margin: 150px;
+}
+
+.closing-waitlist-form h4{
+    font-size: 25px;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 50px;
+}
+
+.socials-wrapper a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+
+/* Media Queries... */
+
+@media (min-width: 320px) and (max-width: 640px) {
+
+    .header-texts h1 {
+        font-size: 40px;
+    }
+
+    .h3-wrapper h3 {
+        font-size: 25px;
+        margin: 0  25px;
+    }
+
+    .waitlist-flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .waitlist-input, .waitlist-signup-button button {
+        width: 60vw;
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* align-content: center; */
+    }
+
+    .icons-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .workshop-wrapper {
+        width: 80%;
+        /* height: 50vh; */
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .workshop-wrapper h2 {
+        font-size: 30px;
+        font: 900;
+    }
+
+    .links-wrapper{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .links-wrapper a {
+        margin: 0;
+        width: 60vw;
+    }
+    
+    .closing-waitlist-form {
+        font-size: 20px;
+        padding: 50px;
+        margin: 0 auto;
+    }
+
+    .footer-wrapper {
+        flex-direction: column-reverse;
+        gap: 20px;
+        font-size: 12px;
+
+        justify-content: space-evenly;
+    }
+    
+    .socials-wrapper a{
+        margin-left: 2px;
+    }
+}
